@@ -22,9 +22,9 @@ func (addr IPAddr2) String() string {
   var s string
   for i, b := range addr {
     s += strconv.Itoa(int(b))
-	if i < len(addr) - 1 {
-	  s += "."
-	}
+		if i < len(addr) - 1 {
+			s += "."
+		}
   }
   return s
 }

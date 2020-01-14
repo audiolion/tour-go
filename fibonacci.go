@@ -16,18 +16,18 @@ func fibonacci() func() int {
   return func() int {
     n += 1
     switch n {
-	  case 0:
-	    n_1 = 1
-	    return n_1
-      case 1:
-	    n_2 = 1
-		return n_1
-	  default:
-	    sum := n_1 + n_2
-		n_2 = n_1
-		n_1 = sum
-		return sum
-	}
+			case 0:
+				n_1 = 1
+				return n_1
+				case 1:
+				n_2 = 1
+			return n_1
+			default:
+				sum := n_1 + n_2
+			n_2 = n_1
+			n_1 = sum
+			return sum
+		}
   }
 }
 
